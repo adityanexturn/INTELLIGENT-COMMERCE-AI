@@ -1,10 +1,4 @@
 import streamlit as st
-from src.ui.sidebar import render_sidebar
-from src.ui.chat_interface import render_chat_interface
-from src.tools.storage import get_storage as get_memory_tools
-
-
-memory_tools = get_memory_tools()
 
 st.set_page_config(
     page_title="Intelligent Commerce AI",
@@ -12,6 +6,21 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Memory optimization for tokenizers (prevents torch warning)
+import os
+os.environ['TOKENIZERS_PARALLELISM'] = 'false'
+
+# Use resource cache for memory_tools (this ensures only one instance even if user refreshes)
+@st.cache_resource
+def get_cached_memory_tools():
+    from src.tools.storage import get_storage as get_memory_tools
+    return get_memory_tools()
+
+memory_tools = get_cached_memory_tools()
+
+from src.ui.sidebar import render_sidebar
+from src.ui.chat_interface import render_chat_interface
 
 # Initialize conversation state
 if "current_conversation_id" not in st.session_state or st.session_state.current_conversation_id is None:
