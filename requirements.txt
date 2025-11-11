@@ -1,0 +1,12 @@
+langchain
+langchain-openai
+langgraph
+neo4j
+faiss-cpu
+sentence-transformers
+streamlit
+python-dotenv
+pandas
+numpy
+libsql-client
+firebase-admin

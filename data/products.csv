@@ -1,0 +1,61 @@
+product_id,product_name,category,brand,price
+prod_001,Apple iPhone 14 Pro Smartphone,Smartphones,Apple,rs129999.00
+prod_002,Apple iPhone 13 Mini Smartphone,Smartphones,Apple,rs59999.00
+prod_003,Samsung Galaxy S25 Ultra Smartphone,Smartphones,Samsung,rs119999.00
+prod_004,Samsung Galaxy A55 Smartphone,Smartphones,Samsung,rs29999.00
+prod_005,Google Pixel 8 Pro Smartphone,Smartphones,Google Pixel,rs84999.00
+prod_006,OnePlus Nord 4 Smartphone,Smartphones,OnePlus,rs24999.00
+prod_007,Xiaomi Redmi Note 13 Pro Smartphone,Smartphones,Xiaomi,rs21999.00
+prod_008,Realme GT Neo 6 Smartphone,Smartphones,Realme,rs19999.00
+prod_009,Sony Xperia 1 V Smartphone,Smartphones,Sony,rs99999.00
+prod_010,Asus ROG Phone 8 Gaming Smartphone,Smartphones,Asus,rs71999.00
+prod_011,Dell XPS 15 Laptop,Laptops,Dell,rs184999.00
+prod_012,Apple MacBook Air M2 Laptop,Laptops,Apple,rs109999.00
+prod_013,HP Spectre x360 Laptop,Laptops,HP,rs139999.00
+prod_014,Lenovo ThinkPad X1 Carbon Laptop,Laptops,Lenovo,rs164999.00
+prod_015,Acer Swift 3 Laptop,Laptops,Acer,rs54999.00
+prod_016,Asus ZenBook 14 Laptop,Laptops,Asus,rs72999.00
+prod_017,Microsoft Surface Laptop 5 Laptop,Laptops,Microsoft,rs99999.00
+prod_018,Razer Blade 15 Gaming Laptop,Laptops,Razer,rs239999.00
+prod_019,Bose QuietComfort 45 Headphones,Headphones,Bose,rs24999.00
+prod_020,Sony WH-1000XM5 Headphones,Headphones,Sony,rs27999.00
+prod_021,JBL Live 660NC Headphones,Headphones,JBL,rs8999.00
+prod_022,Sennheiser Momentum 4 Headphones,Headphones,Sennheiser,rs19999.00
+prod_023,Anker Soundcore Life A3i Earbuds,Headphones,Anker,rs3999.00
+prod_024,Apple AirPods Pro 2 Earbuds,Headphones,Apple,rs24999.00
+prod_025,Apple Watch Series 9 Smartwatch,Smartwatches,Apple,rs39999.00
+prod_026,Samsung Galaxy Watch 6 Smartwatch,Smartwatches,Samsung,rs24999.00
+prod_027,Fitbit Versa 4 Smartwatch,Smartwatches,Fitbit,rs14999.00
+prod_028,Garmin Forerunner 265 Smartwatch,Smartwatches,Garmin,rs29999.00
+prod_029,Nintendo Switch OLED Gaming Console,Gaming Consoles,Nintendo,rs31999.00
+prod_030,Sony PlayStation 5 Gaming Console,Gaming Consoles,Sony,rs54999.00
+prod_031,Microsoft Xbox Series X Gaming Console,Gaming Consoles,Microsoft,rs49999.00
+prod_032,JBL Charge 5 Portable Speaker,Speakers,JBL,rs13999.00
+prod_033,Sony SRS-XB33 Bluetooth Speaker,Speakers,Sony,rs8999.00
+prod_034,Bose Home Speaker 500 Smart Speaker,Speakers,Bose,rs34999.00
+prod_035,Anker Soundcore Flare 2 Speaker,Speakers,Anker,rs6999.00
+prod_036,Apple iPad Air 5 Tablet,Tablets,Apple,rs59999.00
+prod_037,Samsung Galaxy Tab S9 Tablet,Tablets,Samsung,rs54999.00
+prod_038,Lenovo Tab P11 Pro Tablet,Tablets,Lenovo,rs25999.00
+prod_039,Sony Alpha A7 IV Mirrorless Camera,Cameras,Sony,rs229999.00
+prod_040,Canon EOS R6 II Mirrorless Camera,Cameras,Canon,rs199999.00
+prod_041,Nikon Z6 II Mirrorless Camera,Cameras,Nikon,rs169999.00
+prod_042,Logitech MX Master 3 Wireless Mouse,Accessories,Logitech,rs8999.00
+prod_043,Logitech G502 HERO Gaming Mouse,Accessories,Logitech,rs4999.00
+prod_044,Samsung T7 Shield 1TB Portable SSD,Storage,Samsung,rs10499.00
+prod_045,Western Digital Blue 1TB SSD,Storage,Western Digital,rs8499.00
+prod_046,Seagate Backup Plus 4TB HDD,Storage,Seagate,rs7499.00
+prod_047,TP-Link Archer AX73 Router,Networking,TP-Link,rs9999.00
+prod_048,Netgear Nighthawk RAX50 Router,Networking,Netgear,rs14999.00
+prod_049,Apple MagSafe Battery Pack Power Bank,PowerBanks,Apple,rs9999.00
+prod_050,Anker PowerCore 26800 Power Bank,PowerBanks,Anker,rs3999.00
+prod_051,Asus ProArt PA32UCX Monitor,Monitors,Asus,rs249999.00
+prod_052,Samsung Odyssey G7 32 Monitor,Monitors,Samsung,rs64999.00
+prod_053,LG UltraFine 27 Monitor,Monitors,LG,rs44999.00
+prod_054,Google Nest Audio Smart Speaker,Speakers,Google,rs9999.00
+prod_055,Roku Streaming Stick 4K MediaPlayer,Accessories,Roku,rs5999.00
+prod_056,Canon EOS 90D DSLR Camera,Cameras,Canon,rs109999.00
+prod_057,Sony ZV-E10 Vlog Camera,Cameras,Sony,rs59999.00
+prod_058,HyperX Cloud II Gaming Headset,Headphones,HyperX,rs7999.00
+prod_059,Beats Studio3 Wireless Headphones,Headphones,Beats,rs17999.00
+prod_060,Ring Video Doorbell 4 Smart Home,SmartHome,Ring,rs11999.00

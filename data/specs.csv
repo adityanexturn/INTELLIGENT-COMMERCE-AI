@@ -1,0 +1,121 @@
+spec_id,product_name,spec_name,spec_value
+spec_001,Apple iPhone14 Pro,Screen Size,6.1 inch Super Retina XDR
+spec_002,Apple iPhone14 Pro,Storage,256GB
+spec_003,Apple iPhone14 Pro,Battery Life,22 hours video playback
+spec_004,Apple iPhone13 mini,Screen Size,5.4 inch OLED
+spec_005,Apple iPhone13 mini,Storage,128GB
+spec_006,Apple iPhone13 mini,Chip,A15 Bionic
+spec_007,Samsung Galaxy S25 Ultra,Display,6.8 inch QHD+ AMOLED
+spec_008,Samsung Galaxy S25 Ultra,RAM,12GB
+spec_009,Samsung Galaxy S25 Ultra,Camera,200MP Quad Lens
+spec_010,Samsung Galaxy A55,Display,6.6 inch FHD+ AMOLED
+spec_011,Samsung Galaxy A55,RAM,8GB
+spec_012,Samsung Galaxy A55,Battery,5000mAh
+spec_013,Google Pixel8 Pro,Processor,Google Tensor G3
+spec_014,Google Pixel8 Pro,Storage,256GB
+spec_015,Google Pixel8 Pro,Camera,50MP Wide + 48MP Telephoto
+spec_016,OnePlus Nord-4,Display,6.7 inch AMOLED 120Hz
+spec_017,OnePlus Nord-4,RAM,12GB
+spec_018,OnePlus Nord-4,Battery,5000mAh
+spec_019,Redmi Note13 Pro,Processor,MediaTek Dimensity 7200
+spec_020,Redmi Note13 Pro,Storage,256GB
+spec_021,Redmi Note13 Pro,Battery,5160mAh
+spec_022,Realme GT-Neo6,Display,6.74 inch OLED 144Hz
+spec_023,Realme GT-Neo6,RAM,16GB
+spec_024,Realme GT-Neo6,Charging,120W Fast Charge
+spec_025,Sony Xperia1 V,Display,4K HDR OLED
+spec_026,Sony Xperia1 V,Camera,48MP Triple Lens
+spec_027,Sony Xperia1 V,Storage,256GB
+spec_028,Asus ROG Phone8,Display,6.78 inch AMOLED
+spec_029,Asus ROG Phone8,RAM,16GB
+spec_030,Asus ROG Phone8,Battery,6000mAh
+spec_031,Dell XPS-15,Processor,Intel Core i9 13th Gen
+spec_032,Dell XPS-15,RAM,32GB
+spec_033,Dell XPS-15,Display,15.6 inch 4K OLED
+spec_034,Apple Macbook Air M2,Processor,Apple M2 Chip
+spec_035,Apple Macbook Air M2,RAM,8GB Unified
+spec_036,Apple Macbook Air M2,Storage,512GB SSD
+spec_037,HP Spectre x360,Display,13.5 inch OLED Touch
+spec_038,HP Spectre x360,RAM,16GB
+spec_039,HP Spectre x360,Battery Life,12 hours
+spec_040,Lenovo ThinkPad X1 Carbon,Display,14 inch 2.8K IPS
+spec_041,Lenovo ThinkPad X1 Carbon,Processor,Intel i7 12th Gen
+spec_042,Lenovo ThinkPad X1 Carbon,Weight,1.12 kg
+spec_043,Acer Swift3,Display,14 inch FHD
+spec_044,Acer Swift3,RAM,8GB
+spec_045,Acer Swift3,Storage,512GB SSD
+spec_046,Asus ZenBook-14,Processor,AMD Ryzen 7 7730U
+spec_047,Asus ZenBook-14,Display,14 inch OLED
+spec_048,Asus ZenBook-14,Weight,1.3 kg
+spec_049,Bose QC45,Type,Over-Ear
+spec_050,Bose QC45,Battery,24 hours
+spec_051,Sony WH-1000XM5,ANC,Yes
+spec_052,Sony WH-1000XM5,Battery,30 hours
+spec_053,JBL Live660NC,Driver Size,40mm
+spec_054,JBL Live660NC,ANC,Adaptive Noise Cancelling
+spec_055,Sennheiser Momentum4,Connectivity,Bluetooth 5.2
+spec_056,Sennheiser Momentum4,Battery,60 hours
+spec_057,Anker Soundcore A3i,Type,In-Ear
+spec_058,Anker Soundcore A3i,Battery,9 hours + case 36 hours
+spec_059,Apple AirPods Pro2,Chip,H2 Chip
+spec_060,Apple AirPods Pro2,ANC,Active Noise Cancellation
+spec_061,Apple Watch9,Display,Always-on Retina
+spec_062,Apple Watch9,Water Resistance,50m
+spec_063,Garmin Forerunner265,Display,1.3 inch AMOLED
+spec_064,Garmin Forerunner265,GPS,Multi-band
+spec_065,Nintendo Switch OLED,Storage,64GB
+spec_066,Nintendo Switch OLED,Display,7 inch OLED
+spec_067,Sony PlayStation5,Storage,1TB SSD
+spec_068,Sony PlayStation5,CPU,AMD Zen 2 8-core
+spec_069,Microsoft Xbox SeriesX,Storage,1TB NVMe
+spec_070,Microsoft Xbox SeriesX,GPU,12 TFLOPs RDNA 2
+spec_071,JBL Charge-5,Output Power,40W
+spec_072,JBL Charge-5,Battery,20 hours
+spec_073,Sony SRS XB33,Waterproof,IP67
+spec_074,Sony SRS XB33,Battery,24 hours
+spec_075,Bose HomeSpeaker500,Connectivity,Wi-Fi + Bluetooth
+spec_076,Bose HomeSpeaker500,Assistant,Alexa + Google
+spec_077,Apple iPad Air5,Display,10.9 inch Liquid Retina
+spec_078,Apple iPad Air5,Chip,M1
+spec_079,Samsung Galaxy TabS9,Display,11 inch Dynamic AMOLED
+spec_080,Samsung Galaxy TabS9,RAM,8GB
+spec_081,Sony Alpha A7-IV,Sensor,33MP Full Frame
+spec_082,Sony Alpha A7-IV,Video,4K 60fps
+spec_083,Canon EOS R6-II,Sensor,24MP Full Frame
+spec_084,Canon EOS R6-II,Video,4K 60fps
+spec_085,Nikon Z6-II,Sensor,24.5MP Full Frame
+spec_086,Nikon Z6-II,Stabilization,5-axis IBIS
+spec_087,Logitech MX Master-3,Connectivity,Bluetooth + Unifying
+spec_088,Logitech MX Master-3,Battery,70 days
+spec_089,Samsung T7 Shield SSD,Capacity,1TB
+spec_090,Samsung T7 Shield SSD,Speed,1050MB/s
+spec_091,Netgear Nighthawk RAX50,WiFi Standard,WiFi 6
+spec_092,Netgear Nighthawk RAX50,Speed,5.4Gbps
+spec_093,Apple MagSafe BatteryPack,Capacity,1460mAh
+spec_094,Apple MagSafe BatteryPack,Output,15W Wireless
+spec_095,Anker Powercore 26800,Capacity,26800mAh
+spec_096,Anker Powercore 26800,Ports,3 USB Outputs
+spec_097,Samsung Odyssey-G7,Display,32 inch QHD Curved
+spec_098,Samsung Odyssey-G7,Refresh Rate,240Hz
+spec_099,Google NestAudio,Assistant,Google Assistant
+spec_100,Google NestAudio,Power,30W RMS
+spec_101,Canon EOS 90D,Sensor,32.5MP APS-C
+spec_102,Canon EOS 90D,Video,4K UHD
+spec_103,Sony ZV-E10,Sensor,24.2MP APS-C
+spec_104,Sony ZV-E10,Display,Flip-Out LCD
+spec_105,Beats Studio3,ANC,Yes
+spec_106,Beats Studio3,Battery,22 hours
+spec_107,Ring Video Doorbell4,Video Resolution,1080p
+spec_108,Ring Video Doorbell4,Power,Rechargeable Battery
+spec_109,Xiaomi Poco F6,Processor,Dimensity 8300 Ultra
+spec_110,Xiaomi Poco F6,Battery,5000mAh
+spec_111,Asus Vivobook Go14,Display,14 inch FHD
+spec_112,Asus Vivobook Go14,RAM,8GB
+spec_113,Boat Stone 1200,Output Power,14W
+spec_114,Boat Stone 1200,Battery,3600mAh
+spec_115,Noise ColorFit Pro5,Display,1.8 inch AMOLED
+spec_116,Noise ColorFit Pro5,Battery,10 days
+spec_117,LG UltraFine27,Resolution,5K UHD
+spec_118,LG UltraFine27,Ports,Thunderbolt 3
+spec_119,Samsung Frame TV55,Display,55 inch QLED
+spec_120,Samsung Frame TV55,Smart Features,Tizen OS
