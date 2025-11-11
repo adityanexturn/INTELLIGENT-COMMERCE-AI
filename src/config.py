@@ -4,6 +4,7 @@ Fully compatible with Streamlit Cloud deployment.
 """
 
 import os
+import json
 from dotenv import load_dotenv
 from neo4j import GraphDatabase
 
@@ -27,7 +28,6 @@ def get_secret(key: str, default=None):
         pass
     
     return os.getenv(key, default)
-
 
 class Config:
     """Central configuration for the application."""
@@ -58,9 +58,20 @@ class Config:
     FAISS_INDEX_PATH = os.path.join(DATA_DIR, "faiss_index.bin")
     FAISS_METADATA_PATH = os.path.join(DATA_DIR, "faiss_metadata.pkl")
 
-    # Firebase paths
+    # Firebase Configuration
     FIREBASE_URL = get_secret("FIREBASE_URL")
-    FIREBASE_SERVICE_ACCOUNT_JSON = get_secret("FIREBASE_SERVICE_ACCOUNT_JSON")
+    
+    # Handle Firebase JSON from TOML format or string
+    firebase_json_dict = get_secret("FIREBASE_SERVICE_ACCOUNT_JSON")
+    if firebase_json_dict:
+        if isinstance(firebase_json_dict, dict):
+            # Already a dict from TOML
+            FIREBASE_SERVICE_ACCOUNT_JSON = json.dumps(firebase_json_dict)
+        else:
+            # String format from .env
+            FIREBASE_SERVICE_ACCOUNT_JSON = firebase_json_dict
+    else:
+        FIREBASE_SERVICE_ACCOUNT_JSON = None
     
     @staticmethod
     def get_neo4j_driver():
@@ -81,20 +92,22 @@ class Config:
             errors.append("❌ NEO4J_URI not found")
         if not Config.NEO4J_PASSWORD:
             errors.append("❌ NEO4J_PASSWORD not found")
-        if not Config.TURSO_DATABASE_URL:
-            errors.append("❌ TURSO_DATABASE_URL not found")
-        if not Config.TURSO_AUTH_TOKEN:
-            errors.append("❌ TURSO_AUTH_TOKEN not found")
+        
+        # Firebase is optional (falls back to SQLite)
+        if Config.FIREBASE_URL:
+            print("✓ Firebase configured")
+        
+        # Turso is optional (falls back to Firebase/SQLite)
+        if Config.TURSO_DATABASE_URL:
+            print("✓ Turso configured")
             
         if errors:
             print("\n" + "\n".join(errors))
-            raise ValueError("Configuration incomplete. Check your .env file.")
+            raise ValueError("Configuration incomplete. Check your .env file or Streamlit secrets.")
         
         print("✓ Configuration validated successfully")
         print(f"  • Neo4j: {Config.NEO4J_URI}")
-        print(f"  • Turso: {Config.TURSO_DATABASE_URL}")
         print(f"  • OpenAI Model: {Config.OPENAI_MODEL}")
-
 
 if __name__ == "__main__":
     Config.validate_config()

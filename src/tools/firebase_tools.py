@@ -14,8 +14,34 @@ class FirebaseTools:
     def __init__(self):
         # Initialize Firebase (only once)
         if not firebase_admin._apps:
-            cred = credentials.Certificate(json.loads(Config.FIREBASE_SERVICE_ACCOUNT_JSON))
-            firebase_admin.initialize_app(cred, {'databaseURL': Config.FIREBASE_URL})
+            try:
+                firebase_json = Config.FIREBASE_SERVICE_ACCOUNT_JSON
+                
+                # Check if secret exists
+                if not firebase_json:
+                    raise ValueError(
+                        "FIREBASE_SERVICE_ACCOUNT_JSON secret is missing. "
+                        "Please add it to your Streamlit secrets or .env file."
+                    )
+                
+                # Parse JSON (handle both dict and string)
+                if isinstance(firebase_json, str):
+                    cred_dict = json.loads(firebase_json)
+                else:
+                    cred_dict = firebase_json
+                
+                # Initialize Firebase
+                cred = credentials.Certificate(cred_dict)
+                firebase_admin.initialize_app(cred, {
+                    'databaseURL': Config.FIREBASE_URL
+                })
+                
+                print("✓ Firebase initialized successfully")
+                
+            except json.JSONDecodeError as e:
+                raise ValueError(f"Invalid Firebase JSON format: {e}")
+            except Exception as e:
+                raise ValueError(f"Firebase initialization failed: {e}")
     
     def get_all_conversations(self, search_term: str = "") -> List[Dict]:
         """Get all conversations, optionally filtered by search term."""
