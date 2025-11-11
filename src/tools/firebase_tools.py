@@ -7,7 +7,6 @@ from firebase_admin import credentials, db
 from typing import List, Dict
 import time
 import json
-import ast
 
 from src.config import Config
 
@@ -27,22 +26,20 @@ class FirebaseTools:
                 
                 # Parse JSON - handle multiple formats
                 if isinstance(firebase_json, str):
-                    # Check if it's a string representation of a dict
-                    if firebase_json.startswith("{'") or firebase_json.startswith('{"'):
-                        try:
-                            # Try parsing as JSON first
-                            cred_dict = json.loads(firebase_json)
-                        except json.JSONDecodeError:
-                            # If that fails, try using ast.literal_eval for Python dict format
-                            cred_dict = ast.literal_eval(firebase_json)
-                    else:
-                        # Already a JSON string
-                        cred_dict = json.loads(firebase_json)
+                    # String format - parse as JSON
+                    cred_dict = json.loads(firebase_json)
                 elif isinstance(firebase_json, dict):
-                    # Already a dict
-                    cred_dict = firebase_json
+                    # Already a dict (or dict-like object)
+                    cred_dict = dict(firebase_json)  # Convert to regular dict
+                elif hasattr(firebase_json, 'to_dict'):
+                    # Streamlit AttrDict with to_dict method
+                    cred_dict = firebase_json.to_dict()
                 else:
-                    raise ValueError(f"Unexpected Firebase JSON type: {type(firebase_json)}")
+                    # Try converting to dict anyway (handles AttrDict and similar)
+                    try:
+                        cred_dict = dict(firebase_json)
+                    except Exception:
+                        raise ValueError(f"Cannot convert Firebase config to dict. Type: {type(firebase_json)}")
                 
                 # Initialize Firebase
                 cred = credentials.Certificate(cred_dict)
@@ -52,7 +49,7 @@ class FirebaseTools:
                 
                 print("✓ Firebase initialized successfully")
                 
-            except (json.JSONDecodeError, ValueError, SyntaxError) as e:
+            except json.JSONDecodeError as e:
                 raise ValueError(f"Invalid Firebase JSON format: {e}")
             except Exception as e:
                 raise ValueError(f"Firebase initialization failed: {e}")
